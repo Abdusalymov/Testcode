@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+            $(function(){
+              $('.timer').startTimer();
+            });
+    </script> -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+        <header class="main_header">
+            <div class="title_timer"><p>Время до конца теста:</p></div>
+            <div class="timer" data-minutes-left=15></div>
+        </header>
+
+        <main class="test_area">
+          <div class="navigation_questions">
+            <div class="number_of_question active">  <a data-id="101">1</a></div>
+            <div class="number_of_question">				 <a data-id="102">2</a></div>
+            <div class="number_of_question">				 <a data-id="103">3</a></div>
+            <div class="number_of_question">			 	 <a data-id="104">4</a></div>
+            <div class="number_of_question">				 <a data-id="105">5</a></div>
+            <div class="number_of_question">				 <a data-id="106">6</a></div>
+            <div class="number_of_question">				 <a data-id="107">7</a></div>
+            <div class="number_of_question">				 <a data-id="108">8</a></div>
+            <div class="number_of_question">				 <a data-id="109">9</a></div>
+            <div class="number_of_question" id="10" ><a data-id="110">10</a></div>
+          </div>
+
+          <div id='loader' style="display:none"><img src="loader.gif" alt="#"></div>
+
+          <div class="question_area">
+              <fieldset  data-id="101">
+                <legend>Выберите ваши увлечения 1</legend>
+                <div>
+                  <input type="checkbox" class="get_value" name="1000" value="coding">
+                  <label for="coding">Coding</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1000" value="sport">
+                  <label for="music">Sport</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1000" value="yoga">
+                  <label for="coding">Yoga</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1000" value="music">
+                  <label for="music">Music</label>
+                </div>
+              </fieldset>
+
+              <fieldset style="display:none" data-id="102">
+                <legend>Выберите ваши увлечения 2</legend>
+                <div>
+                  <input type="checkbox" class="get_value" name="1001" value="coding">
+                  <label for="coding">Coding</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1001" value="music">
+                  <label for="music">Music</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1001" value="coding">
+                  <label for="coding">Coding</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1001" value="music">
+                  <label for="music">Music</label>
+                </div>
+              </fieldset>
+
+              <fieldset style="display:none" data-id="103">
+                <legend>Выберите ваши увлечения 3</legend>
+                <div>
+                  <input type="checkbox" class="get_value" name="1002" value="coding">
+                  <label for="coding">Coding</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1002" value="music">
+                  <label for="music">Music</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1002" value="coding">
+                  <label for="coding">Coding</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="get_value" name="1002" value="music">
+                  <label for="music">Music</label>
+                </div>
+              </fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="104"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="105"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="106"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="107"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="108"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="109"></fieldset>
+              <fieldset class="asyncQuestion" style="display:none" data-id="110"></fieldset>
+            </div>
+        </main>
+
+
+        <button class="test_end" style="display:none" onclick="getCheckedCheckBoxes()">Завершить тест</button>
+        
+        <!-- <script src="js/simple.timer.js"></script> -->
+        <script src="js/main.js" ></script>
+</body>
+</html>
